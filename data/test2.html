@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> 解析百度搜索结果link？url=_Baidu 百度_cnBeta.COM</title>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta http-equiv="expires" content="0" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="author" content="cnBeta" />
+<meta name="generator" content="jianglb.com" />
+<meta name="copyright" content="Copyright (c) 2008 cnBeta. All Rights Reserved." />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="1 days" />
+<meta name="rating" content="general" />
+<meta property="qc:admins" content="742237361763625416375" />
+<meta name="keywords" content="Baidu 百度, 解析百度搜索结果link？url=,cnBeta.com" />
+<meta name="description" content="
+自从9月后百度和360开战的结果就是 百度搜索结果的网址改变了，变成link?url=………这样的重定向格式了。看到这样的不友好的URL真有破解的冲动。于是今天开始试试破解它。前几天写过一篇可以获取到百度跳转之后的网址的文章,在百度了一下，有人也研究过百度link?url=的。大概得出如下结果：" />
+
+<link href="/styles/news.css?v=071027" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="/css/rating.css" /><link rel="stylesheet" type="text/css" href="/css/google.css" />
+<script language="javascript" type="text/javascript" src="/js/tem.js?v=0921"></script><script type="text/javascript" language="javascript" src="/js/behavior.js"></script>
+<script type="text/javascript" language="javascript" src="/js/rating.js"></script>
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-9066977823953139");
+GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_950");
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_576");
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_576_2");
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_300");
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_top");
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_rightup");
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_576_1");
+GA_googleAddSlot("ca-pub-9066977823953139", "cnBeta_article_300_1");
+</script>
+<script type="text/javascript">
+GA_googleFetchAds();
+</script>
+<script type="text/javascript" language="javascript" src="/js/google.js"></script>
+
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+<script type="text/javascript">
+BAIDU_CLB_preloadSlots("577466","577459");
+</script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/backend.php" />
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/backend.php?atom" />
+</head>
+<body >
+<div id="wrapper">
+<div id="head">
+	<div id="h_left">
+		<div id="logo"><span><a href="/index.php"><img src="/images/cnlogo.gif" alt="" width="132" height="60" align="left" /></a></span><span class="topad"> <!-- cnBeta_article_top -->
+<script type="text/javascript">
+GA_googleFillSlot("cnBeta_article_top");
+</script></span></div>
+		<div id="guider">
+		<div id="all">
+			<span class="leftBorder"></span>
+			<span class="newsBlockLeft"></span><span class="newsBlockMid"><a href="/index.php"><strong>资 讯</strong></a></span><span class="newsBlockRight"></span>
+			<span class="otherBlock">
+				
+				<a href="/topic.php?topicid=306">互动</a>
+				<a href="/topiclist.html">资讯主题</a>
+				<a href="/top10.html">排行</a>
+				<a href="/argues/" style="color:#FC0; font-weight:bold">辩论</a>
+				<a href="/about.php" target="_blank">团队</a>	
+			</span>
+			<span class="rightBorder"></span>
+		</div>
+		<div id="news">
+			<span class="leftBorder"></span>
+			<span class="midBlock">
+				 <a href="/index.php">首  页</a>
+				
+				<a href="http://www.cnbeta.com/newsend.php" style="color:#F00; font-weight:bold" target="_blank">投递资讯</a> | <a href="mailto:ugmbbc@gmail.com?subject=投递资讯：">邮箱爆料</a> | <a href="http://www.cnbeta.com/ios" target="_blank">iOS阅读</a> | <a href="https://play.google.com/store/apps/details?id=com.cnbeta.imkac" target="_blank">Android阅读</a> | <a href="http://user.qzone.qq.com/706290416" target="_blank">QQ空间</a> | <a href="http://t.qq.com/Aoouch" target="_blank">腾讯微博</a> | <a href="http://weibo.com/cnbeta" target="_blank">新浪微博</a>
+			</span>
+			<span class="rightBorder"></span>
+		</div>
+		</div>
+	</div> <!-- end head left -->
+	<div id="h_right">
+	<div id="tiny"><iframe src="http://open.qzone.qq.com/like?url=http%3A%2F%2Fuser.qzone.qq.com%2F706290416&width=130&height=22&type=button_num" allowtransparency="true" scrolling="no" border="0" frameborder="0" align="absmiddle" style="width:115px;height:22px;border:none;overflow:hidden;"></iframe> |<div class="qrius-button" qriusfeed="http://cnbeta.feedsportal.com/c/34306/f/624776/index.rss" qriustitle="cnBeta.COM" style="display:inline-block;*display:inline;width:16px;height:16px;line- height:18px;cursor:pointer;">
+            <img src="http://js.qrius.me/serve/res/brand_icon.png" style="width:16px;height:16px;" align="absmiddle"/>
+          <script type="text/javascript" src="http://js.qrius.me/qrius.zh-cn.js"></script>
+            </div> |
+							
+						<a href=""> <iframe width="63" height="22"  align="absmiddle" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=22&uid=2769378403&style=1&btn=red&dpc=1"></iframe> </a>  |
+						<a href="http://www.cnbeta.com/backend.php" target="_blank" title="订阅本站资讯"><img src="/images/feed.gif"> <strong>资讯</strong></a> | <a href="http://www.cnbeta.com/commentrss.php" target="_blank" title="订阅本站精彩评论"><img src="/images/feed.gif"> <strong>评论</strong></a>
+	</div>
+	<div>
+     <center><!-- ca-pub-9066977823953139/cnBeta_article_rightup -->
+<script type="text/javascript">
+GA_googleFillSlot("cnBeta_article_rightup");
+</script></center> 
+	</div>
+	</div> <!-- end head right -->
+</div> <!-- end head -->
+<!-- main -->
+<div id="main">
+<div id="menu">
+		<div class="title"><span class="leftBorder"></span><span class="midBlock">解析百度搜索结果link？url=</span><span class="rightBorder"></span></div>
+		<div class="subTitle"><span>上一篇资讯：<a href="http://www.cnbeta.com/articles/206464.htm" title="自行车、极限运动的好搭档 ICEdot头盔保障你的安全">自行车、极限运动的好搭档 ICEdot头盔保障你的...</a></span>  <span>下一篇资讯：<a href="http://www.cnbeta.com/articles/206466.htm" title="iPhone 5不能用的设备咋处理？砸个稀巴烂">iPhone 5不能用的设备咋处...</a> </span></div>
+</div>
+<div id="content">
+<div id="contentWrapper">
+	<div id="newsBox">
+		
+	    <div id="news">
+		<h3 id="news_title">解析百度搜索结果link？url=</h3>
+		<p id="news_font">  </p>
+        <p id="news_author"><span>ugmbbc发布于 2012-09-19 18:11:19|<script src="/counter.php?sid=206465"></script> 次阅读  稿源:<a href="http://enenba.com/?post=241" target=_blank>enenba</a> <a href="javascript:void(window.open('http://v.t.qq.com/share/share.php?title='+encodeURI(document.title)+'&url='+encodeURIComponent(window.location)+'&appkey=a75e1c5904c842b7b3aed10213379cca
+&site=cnbeta.com&pic=','转播到腾讯微博', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no'));"><img align="absmiddle" src="http://img.cnbeta.com/share/01-qqweibo.gif" title="分享至腾讯微博" target="_blank" /></a> <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cnbeta.com%2Farticles%2F206465.htm" target="_blank" style="color:#000000;text-decoration:none;font-size:12px;font-weight:normal"><img align="absmiddle" src="http://img.cnbeta.com/share/04-qzone.gif" title="分享到QQ空间" target="_blank" /></a> <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=696316965&',u=z||d.location,p=['url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'cnBeta.com','http://www.cnbeta.com','','解析百度搜索结果link？url= 自从9月后百度和360开战的结果就是 百度搜索结果的网址改变了，变成link?url=………这样的重定向格式了。看到这样的不友好的URL真有破解的冲动。于是今天开始试试破解它。前几天写过一篇可以获... ','http://www.cnbeta.com/articles/206465.htm','gb2312'));" ><IMG alt=分享至新浪微博 src="http://img.cnbeta.com/share/02-weibo.gif" align=absMiddle border=0></a>   <a href="javascript:d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(kaixin=window.open('http://www.kaixin001.com/~repaste/repaste.php?&amp;rurl='+escape(d.location.href)+'&amp;rtitle='+escape('解析百度搜索结果link？url=')+'&amp;rcontent='+escape('解析百度搜索结果link？url='),'kaixin'));kaixin.focus();"><img src="http://img.cnbeta.com/share/06-kaixin001.gif" alt="转贴到开心网" border=0 align=absMiddle></a> <a href="javascript:void((function(s,d,e){if(/xiaonei\.com/.test(d.location))return;var%20f='http://share.xiaonei.com/share/buttonshare.do?link=',u=d.location,l=d.title,p=[e(u),'&amp;title=',e(l)].join('');function%20a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent));"><img src="http://img.cnbeta.com/share/05-renren.gif" alt="分享到校内人人网" border=0 align=absMiddle></a> <a href="javascript:(function(){var a=window,b=document,c=encodeURIComponent,d=a.open('http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk='+c(b.location)+'&amp;title='+c(b.title),'bkmk_popup','left='+((a.screenX||a.screenLeft)+10)+',top='+((a.screenY||a.screenTop)+10)+',height=420px,width=550px,resizable=1,alwaysRaised=1');a.setTimeout(function(){d.focus()},300)})();"><img src="http://img.cnbeta.com/share/08-google.gif" alt="添加到Google书签" border=0 align=absMiddle></a></span></p>
+        <script type="text/javascript" language="javascript">var ReTitle = '回复:解析百度搜索结果link？url=';</script>
+         <div id="news_content"><a href="/topics/261.htm" ><img src="http://img.cnbeta.com/topics/baidulogo.gif" alt="Baidu 百度" name="sign"  align="right" id="sign" onload="fixPNG(this)"/></a>
+        <p><b>感谢<a href="http://juny.me" target="_blank">Juny</a>的投递</b><br />
+自从9月后百度和360开战的结果就是 百度搜索结果的网址改变了，变成link?url=………这样的重定向格式了。看到这样的不友好的URL真有破解的冲动。于是今天开始试试破解它。前几天写过一篇<a href="http://enenba.com/?post=237" target="_blank">可以获取到百度跳转之后的网址</a>的文章,在百度了一下，有人也研究过百度link?url=的。大概得出如下结果：</p>
+		<p><p>我是这样验证的：<br />
+1、先百度搜索 www.php100.com<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第一个结果链接：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://www.baidu.com/link?url=…………ebac5573358cc3c0659257bfcf54<span style="color:#009900;"><strong>6427d385fef6656de2404d6843da27</strong></span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 看到前面的几位<strong><span style="color:#009900;">6427d385</span></strong><strong>fef6656de2404d6843da27</strong></p>
+<p>2、 再百度搜索 www.hao123.com<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;第一个结果链接：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://www.baidu.com/link?url=…………ebac5573358cc3c0659257bfcf54 <strong><span style="color:#009900;">6427d385e6ff7a6de0434d6843da</span><br />
+</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 看到前面的几位<strong><span style="color:#009900;">6427d385</span>e6ff7a6de0434d6843da</strong></p>
+<p>……</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 多次搜索N个网站后发现，域名前几位是“www.”的，密文是都是6427d385<br />
+并且www.是四个字符，密文6427d385是八个字符。可以知道密文两个字符等于url一个字符。</p>
+<p>于是写了一个php表单查询并得到密文部分，方便以后查看。</p>
+<p>出个php源码：</p>
+<pre class="brush:php; toolbar: true; auto-links: true;">&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+&lt;title&gt;查询百度link?ulr=真实链接表单&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;?php
+/*
+	getrealurl 获取301、302重定向后的URL地址  by enenba.com
+	@param str $url 查询
+	$return str  定向后的url的真实url
+ */
+function getrealurl($url){
+	$header = get_headers($url,1);
+	if (strpos($header[0],'301') || strpos($header[0],'302')) {
+		if(is_array($header['Location'])) {
+			return $header['Location'][count($header['Location'])-1];
+		}else{
+			return $header['Location'];
+		}
+	}else {
+		return $url;
+	}
+}
+$input = '&lt;form method="get" action=""&gt;&lt;input type="text" name="url" id="url" style="width:800px;" /&gt;&lt;input type="submit" value="提交" /&gt;&lt;/form&gt;&lt;body&gt;&lt;/html&gt;';
+
+$url = isset($_GET['url'])?$_GET['url']:'';
+if(empty($url)) exit($input);
+$urlreal = getrealurl($url);
+echo '真实的url为：'.$urlreal;
+$urlreal = ltrim($urlreal,'http://');
+
+$search = '/ebac5573358cc3c0659257bfcf54([0-9a-f]+)/i';
+preg_match($search,$url,$r);
+$url_encode = $r[1];  unset($r);
+
+echo '&lt;br/&gt;密文部分为：'.$url_encode.'&lt;br/&gt;';
+
+$urlreal_arr = str_split($urlreal);
+$url_encode_arr = str_split($url_encode,2);
+
+echo '&lt;br /&gt;';
+echo $input;
+?&gt;
+
+测试页面:<a target="_blank" href="http://enenba.com/tool/baidu_link_url_jiemi/">http://enenba.com/tool/baidu_link_url_jiemi/</a></pre></p>
+		
+		
+		
+
+		<div class="digbox">
+		<div class="dig" id="dig206465">18</div>
+		<div class="digaction" id="action206465"><a href="javascript:dig(206465);"  style="color:white">顶一下</a></div>
+		<div id="loading206465" class="digload"></div>
+		<div id="reply206465"></div>
+		</div>
+		<div id="googleAd_afc">
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		</div>
+</div><!-- cnBeta_article_576_1 -->
+<script type="text/javascript">
+GA_googleFillSlot("cnBeta_article_576_1");
+</script><br><a target = "_blank " href="http://note.youdao.com/?vendor=cnbeta"><img border="0" src="http://img.cnbeta.com/youdao576.gif" /></a><br><br><!-- cnBeta_article_576 -->
+<script type="text/javascript">
+GA_googleFillSlot("cnBeta_article_576");
+</script>
+		<p id="news_foot">　</p>
+		</div> 
+	<!-- end newsBox news -->
+		
+
+		<div id="mark">
+			<div class="subTitle">对本文中的事件或人物打分</div>
+			<div id="mark_content"><div class="ratingblock">
+
+	<div id="unit_long206465">
+		<ul id="unit_ul206465" class="unit-rating-down" style="width:180px;">
+		
+<li><a href="/rating.php?j=-5&q=206465&c=11&s=1" title="垃圾中的战斗机,扣5分 " class="r-5-unit rater">-5</a></li>
+		
+<li><a href="/rating.php?j=-4&q=206465&c=11&s=1" title="太垃圾了,扣4分 " class="r-4-unit rater">-4</a></li>
+		
+<li><a href="/rating.php?j=-3&q=206465&c=11&s=1" title="傻冒新闻,扣3分 " class="r-3-unit rater">-3</a></li>
+		
+<li><a href="/rating.php?j=-2&q=206465&c=11&s=1" title="差劲,扣2分 " class="r-2-unit rater">-2</a></li>
+		
+<li><a href="/rating.php?j=-1&q=206465&c=11&s=1" title="不怎么样,扣1分 " class="r-1-unit rater">-1</a></li>
+		
+<li><a href="/rating.php?j=0&q=206465&c=11&s=1" title="平淡,0分 " class="r0-unit rater">0</a></li></ul><ul id="unit_ul206465" class="unit-rating-up" style="width:150px;"><li class="current-rating" style="width:0px;left:0px">Currently.0.00/5</li>
+		
+<li><a href="/rating.php?j=1&q=206465&c=11&s=1" title="凑合吧,1分 " class="r1-unit rater">1</a></li>
+		
+<li><a href="/rating.php?j=2&q=206465&c=11&s=1" title="还可以,2分 " class="r2-unit rater">2</a></li>
+		
+<li><a href="/rating.php?j=3&q=206465&c=11&s=1" title="很不错,3分 " class="r3-unit rater">3</a></li>
+		
+<li><a href="/rating.php?j=4&q=206465&c=11&s=1" title="太棒了,4分 " class="r4-unit rater">4</a></li>
+		
+<li><a href="/rating.php?j=5&q=206465&c=11&s=1" title="太有才了,满分! " class="r5-unit rater">5</a></li></ul><p style="padding-top:10px;text-indent:5em;color:#999;">当前平均分: 打分后显示
+	  	</p>
+		<div class="rateNum"><strong>-5</strong><strong>-4</strong><strong>-3</strong><strong>-2</strong><strong>-1</strong><strong>0</strong><strong>1</strong><strong>2</strong><strong>3</strong><strong>4</strong><strong>5</strong></div>
+</div>
+</div> </div>
+		</div><!-- end newsBox mark -->
+
+		<div id="mark">
+			<div class="subTitle">对本篇资讯报道的质量打分</div>
+			<div id="mark_content"><div class="ratingblock">
+
+	<div id="unit_long_story206465">
+		<ul id="unit_ul_story206465" class="unit-rating" style="width:330px;"><li class="current-rating" style="width:30px;left:150px">Currently.0.00/5</li>
+		
+<li><a href="/rating.php?j=-5&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="垃圾中的战斗机,扣5分 " class="r-5-unit rater">-5</a></li>
+		
+<li><a href="/rating.php?j=-4&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="太垃圾了,扣4分 " class="r-4-unit rater">-4</a></li>
+		
+<li><a href="/rating.php?j=-3&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="傻冒新闻,扣3分 " class="r-3-unit rater">-3</a></li>
+		
+<li><a href="/rating.php?j=-2&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="差劲,扣2分 " class="r-2-unit rater">-2</a></li>
+		
+<li><a href="/rating.php?j=-1&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="不怎么样,扣1分 " class="r-1-unit rater">-1</a></li>
+		
+<li><a href="/rating.php?j=0&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="平淡,0分 " class="r0-unit rater">0</a></li>
+		
+<li><a href="/rating.php?j=1&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="凑合吧,1分 " class="r1-unit rater">1</a></li>
+		
+<li><a href="/rating.php?j=2&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="还可以,2分 " class="r2-unit rater">2</a></li>
+		
+<li><a href="/rating.php?j=3&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="很不错,3分 " class="r3-unit rater">3</a></li>
+		
+<li><a href="/rating.php?j=4&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="太棒了,4分 " class="r4-unit rater">4</a></li>
+		
+<li><a href="/rating.php?j=5&q=206465&c=11&s=06a8039b14a31babf2f26fa26104df93" title="太有才了,满分! " class="r5-unit rater">5</a></li></ul><p style="padding-top:10px;text-indent:5em;color:#999;">当前平均分:打分后显示
+	  	</p>
+		<div class="rateNum"><strong>-5</strong><strong>-4</strong><strong>-3</strong><strong>-2</strong><strong>-1</strong><strong>0</strong><strong>1</strong><strong>2</strong><strong>3</strong><strong>4</strong><strong>5</strong></div>
+</div>
+</div> </div>
+		</div><!-- end newsBox mark -->
+
+		<div id="post"> <!-- begin reedback post -->
+			<div class="subTitle">现在评论本文</div>
+			<div id="comad"><a target = "_blank" href="http://www.wy.cn/promotion/cn2/index.html"><img border="0" alt="" src="http://img.cnbeta.com/wy.gif" /></a></div>
+			<div class="Content">
+				<input name="tid" type="hidden"  value="" />
+				<input type="hidden" name="sid" value="$sid"/>
+				<div class="Content">
+				
+	      	 	<div class="row"><label>评论主题:</label><input class="input" name="nowsubject" type="text" id="subject0" value="Re:解析百度搜索结果link？url="/></div>
+				
+	      	 	<div class="row"><label>您的大名:</label><input class="input" name="nowname" type="text" id="name0"/></div>
+	      	 	<div class="row"><label>您的主页:</label><input class="input" name="nowpage" type="text" id="page0"/></div>
+	      	 	<div class="row"><label>您的邮箱:</label><input class="input" name="nowemail" type="text" id="email0"/></div>
+	      	 	<div class="row"><label>您的评论:</label><textarea name="comment" id="comment0" onFocus="_Showvaldiv(0);"></textarea></div>
+	      	 	<div class="row" style="display:none;" id="valdiv0"><label>　验证码:</label><input class="input" name="valimg" type="text" id="valimg0" style="width: 40px;"/><img src="" name="safecode" style="cursor:pointer"  border="0" align="absbottom" id="safecode0" alt="更换一张验证码图片" onClick="reloadcode(0);"> [<a href="javascript:reloadcode(0);">刷新验证码</a>] [<a href="javascript:fixCode(0);">修正出错</a>]</div>
+	      	 	<div id="AxajTip0" class="AxajTip"></div>
+	      	 	<div class="row" id="bottom0" style="text-align:center;"><input type="button" class="button" id="button0" value="递交"  onClick="_postReply(0,206465)"/></div></div>
+	      	 	</form>
+	      	 </div>
+      	 	<div id="AxajTip20"></div>
+      	 	<div id="AxajTip30"></div>
+        </div><!-- end feedback post -->
+		<div id="normal">
+			<div id="loading_normal" style="display:none; color:white; line-height:100%; height:10px;" >
+			<center><img src="/images/loading.gif"></center>
+			</div>
+			<div id="text_normal" style="display:none"></div>
+		</div>
+	</div> <!-- end newsBox -->
+	<div id="feedback">
+		<div id="good">
+			<div id="g_title">热门评论</div>
+			<div id="g_content">
+				<div id="loading_g_content" style="display:none; color:white; line-height:100%; height:10px;" >
+				<center><img src="/images/loading.gif"></center>
+				</div>
+				<div id="text_g_content" style="display:none"></div>
+			
+			
+			
+			</div>
+		</div>
+		<div id="mark">
+			<div class="subTitle">赞助商链接</div>
+		
+	<center><script type="text/javascript"><!--
+google_ad_client = "pub-9066977823953139";
+google_alternate_color = "E5ECF4";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_ad_type = "text_image";
+//2007-09-01: 新闻页右侧大方块区域
+google_ad_channel = "4884807479";
+google_color_border = "E5ECF4";
+google_color_bg = "E5ECF4";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><br>
+</center>
+
+			</div>
+		<div id="mark">
+			<div class="subTitle">相关资讯</div>
+			<div class="about_content"><a href="http://www.cnbeta.com/articles/235261.htm" title="业绩未达预期 百度周五早盘跌8.5%">业绩未达预期 百度周五早盘跌8.5%</a><br><a href="http://www.cnbeta.com/articles/235129.htm" title="百度一季度业绩不佳：盘后大跌 成本大增">百度一季度业绩不佳：盘后大跌 成本大增</a><br><a href="http://www.cnbeta.com/articles/235118.htm" title="收购PPS传言刺激百度股价大涨4%">收购PPS传言刺激百度股价大涨4%</a><br><a href="http://www.cnbeta.com/articles/235062.htm" title="百度Mac输入法3.0版皮肤功能登场">百度Mac输入法3.0版皮肤功能登场</a><br><a href="http://www.cnbeta.com/articles/235057.htm" title="百度旗下招聘网站“百伯”项目组被裁">百度旗下招聘网站“百伯”项目组被裁</a><br><a href="http://www.cnbeta.com/articles/234978.htm" title="传百度收购PPS基本落定 金额3.5亿-4亿美元">传百度收购PPS基本落定 金额3.5亿-4亿美...</a><br><a href="http://www.cnbeta.com/articles/234954.htm" title="百度推救灾动态图：可查物资缺口及灾民分布">百度推救灾动态图：可查物资缺口及灾民分布</a><br><a href="http://www.cnbeta.com/articles/234629.htm" title="百度应急救援主题地图上线 实时动态路况播报">百度应急救援主题地图上线 实时动态路况播报</a><br><a href="http://www.cnbeta.com/articles/234523.htm" title="百度推出雅安地震寻人平台 宣称已寻找到6人">百度推出雅安地震寻人平台 宣称已寻找到6人</a><br><a href="http://www.cnbeta.com/articles/234458.htm" title="百度基金会宣布向雅安地震灾区捐款500万">百度基金会宣布向雅安地震灾区捐款500万</a><br><a href="http://www.cnbeta.com/articles/234160.htm" title="强攻360腹地：百度杀毒正式亮相">强攻360腹地：百度杀毒正式亮相</a><br><a href="http://www.cnbeta.com/articles/234004.htm" title="传百度360竞购2345网址导航：流量大战或开启">传百度360竞购2345网址导航：流量大战或开...</a><br><a href="http://www.cnbeta.com/articles/233484.htm" title="百度在硅谷建深度学习实验室 探索新搜索算法">百度在硅谷建深度学习实验室 探索新搜索算法</a><br><a href="http://www.cnbeta.com/articles/233120.htm" title="Hitwise：百度仍占搜索份额近8成 360缓慢增长">Hitwise：百度仍占搜索份额近8成 360...</a><br><a href="http://www.cnbeta.com/articles/232418.htm" title="百度去年投资百度有啊及爱奇艺亏损4720万美元">百度去年投资百度有啊及爱奇艺亏损4720万美元</a><br>
+			</div>
+		</div><!-- end about newsBox  -->
+		<script type="text/javascript">
+Arcomment("206465","g_content");
+Arcomment("206465","normal");
+</script>
+	<br /><br />
+	<center>
+<script type="text/javascript">BAIDU_CLB_fillSlot("577466");</script>
+<BR><br><script type="text/javascript"><!--
+google_ad_client = "ca-pub-9066977823953139";
+/* 文章页右300x250 */
+google_ad_slot = "0948614537";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><BR><BR>
+<script type="text/javascript" >BAIDU_CLB_SLOT_ID = "649316";</script>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/o.js"></script><BR><a target = "_blank" href="http://www.szpda.com/goods.php?id=1190"><img border="0" alt="" src="http://img.cnbeta.com/szpda300.gif" /></a>
+</center>
+   
+		
+	
+	
+	</div>
+</div>
+</div><!-- end news content -->
+</div> <!-- end main -->
+<!-- foot -->
+<!--
+<div class="span"></div>
+<div id="foot">foot</div>
+  本页生成时间:0.08 秒 -->
+<div align = "center">
+<!-- ca-pub-9066977823953139/cnBeta_article_950 -->
+<script type="text/javascript">
+GA_googleFillSlot("cnBeta_article_950");
+</script>
+</div>
+  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-435607-2";
+        urchinTracker();
+        </script>
+<script language="javascript" 
+src="http://count28.51yes.com/click.aspx?id=289804176&logo=1"></script>
+</div>
+</body>
+</html>
